@@ -19,15 +19,6 @@
 </head>
 <body>
 
-<!--<div class="container container-for-xs d-block d-lg-none">-->
-<!--<div class="container container-for-lg d-none d-lg-block">-->
-
-
-<!-- Margin For Large +-->
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!--        <div class="col-lg-8 offset-lg-2">-->
-
 <!-- NAV BAR -->
 
 <!-- For XS screens-->
@@ -58,7 +49,7 @@
 <!-- For small screens -->
 
 <div class="nav-for-sm d-none d-sm-block d-md-none">
-    <div class="nav-white-bar-sm d-flex justify-content-center align-items-center">
+    <div class="nav-white-bar-sm d-flex justify-content-center align-items-center container-fluid">
         <ul class="nav justify-content-center align-items-baseline">
             <li class="nav-item">
                 <a class="nav-link active" href="#">Services</a>
@@ -85,10 +76,10 @@
 <!-- For med+ screens -->
 
 <div class="nav-for-md d-none d-md-block">
-    <div class="nav-white-bar-sm px-5 d-flex align-items-center">
+    <div class="nav-white-bar-sm px-5 d-flex align-items-center container-fluid">
         <img class="rounded-circle mr-3" id="logo-for-sm" src="assets/logo.jpg">
         <span class="logo-text">Codeup Design</span>
-        <ul class="nav ml-auto">
+        <ul class="nav d-flex justify-content-between ml-auto">
             <li class="nav-item">
                 <a class="nav-link active push" href="#">Services</a>
             </li>
@@ -119,8 +110,8 @@
 
 <!-- MAIN BODY -->
 
-<div class="container text-center text-uppercase mb-5">
-    <div class="row" id="main-body">
+<div class="container-fluid text-center text-uppercase">
+    <div class="row">
         <div class="col-12">
 
             <!-- CIRCLE LINKS -->
@@ -129,7 +120,7 @@
 
             <div class="container large-circles d-block d-sm-none" id="circle-links-container-large">
 
-                <div class="row d-flex justify-content-center" id="circle-links-large">
+                <div class="row" id="circle-links-large">
 
                     <div class="circle col-6 col-sm-3" id="design-large">
                         <a href="#design-section"><div class="circle red">
@@ -161,29 +152,29 @@
 
             <!--     SMALL CIRCLES (FOR S+)       -->
 
-            <div class="container small-circles d-none d-sm-block" id="circle-links-container-small">
+            <div class="container-fluid small-circles d-none d-sm-block" id="circle-links-container-small">
 
                 <div class="row d-flex justify-content-center" id="circle-links-small">
 
-                    <div class="circle col-6 col-sm-3" id="design-small">
+                    <div class="circle d-flex justify-content-center col-6 p-0 col-sm-auto col-md-3" id="design-small">
                         <a href="#design-section"><div class="circle red">
                             <h4>Design</h4>
                         </div></a>
                     </div>
 
-                    <div class="circle col-6 col-sm-3" id="develop-small">
+                    <div class="circle d-flex justify-content-center col-6 p-0 col-sm-auto col-md-3" id="develop-small">
                         <a href="#develop-section"><div class="circle orange">
                             <h4>Develop</h4>
                         </div></a>
                     </div>
 
-                    <div class="circle col-6 col-sm-3" id="support-small">
+                    <div class="circle d-flex justify-content-center col-6 p-0 col-sm-auto col-md-3" id="support-small">
                         <a href="#support-section"><div class="circle green">
                             <h4>Support</h4>
                         </div></a>
                     </div>
 
-                    <div class="circle col-6 col-sm-3" id="host-small">
+                    <div class="circle d-flex justify-content-center col-6 p-0 col-sm-auto col-md-3" id="host-small">
                         <a href="#host-section"><div class="circle blue">
                             <h4>Host</h4>
                         </div></a>
@@ -194,7 +185,9 @@
 
         </div>
     </div>
+</div>
 
+<div class="container text-center text-uppercase">
     <hr class="d-none d-sm-block">
 
         <!--    SELECTED WORK    -->
@@ -236,16 +229,16 @@
                                         <p class="card-text text-left">Featured Project</p>
                                     </div>
                                     <div class="small-circle-container d-flex">
-                                        <div class="small-circle red" id="design-sm-circle">
+                                        <div class="small-circle red" id="design-sm-circle-1">
                                             <h5>D</h5>
                                         </div>
-                                        <div class="small-circle orange" id="develop-sm-circle">
+                                        <div class="small-circle orange" id="develop-sm-circle-1">
                                             <h5>D</h5>
                                         </div>
-                                        <div class="small-circle green" id="support-sm-circle">
+                                        <div class="small-circle green" id="support-sm-circle-1">
                                             <h5>S</h5>
                                         </div>
-                                        <div class="small-circle blue" id="host-sm-circle">
+                                        <div class="small-circle blue" id="host-sm-circle-1">
                                             <h5>H</h5>
                                         </div>
                                     </div>
@@ -264,16 +257,16 @@
                                         <p class="card-text text-left">Featured Project</p>
                                     </div>
                                     <div class="small-circle-container d-flex">
-                                        <div class="small-circle red" id="design-sm-circle">
+                                        <div class="small-circle red" id="design-sm-circle-2">
                                             <h5>D</h5>
                                         </div>
-                                        <div class="small-circle orange" id="design-sm-circle">
+                                        <div class="small-circle orange" id="develop-sm-circle-2">
                                             <h5>D</h5>
                                         </div>
-                                        <div class="small-circle green" id="design-sm-circle">
+                                        <div class="small-circle green" id="support-sm-circle-2">
                                             <h5>S</h5>
                                         </div>
-                                        <div class="small-circle blue" id="design-sm-circle">
+                                        <div class="small-circle blue" id="host-sm-circle-2">
                                             <h5>H</h5>
                                         </div>
                                     </div>
@@ -292,16 +285,16 @@
                                         <p class="card-text text-left">Featured Project</p>
                                     </div>
                                     <div class="small-circle-container d-flex">
-                                        <div class="small-circle red" id="design-sm-circle">
+                                        <div class="small-circle red" id="design-sm-circle-3">
                                             <h5>D</h5>
                                         </div>
-                                        <div class="small-circle orange" id="design-sm-circle">
+                                        <div class="small-circle orange" id="develop-sm-circle-3">
                                             <h5>D</h5>
                                         </div>
-                                        <div class="small-circle green" id="design-sm-circle">
+                                        <div class="small-circle green" id="support-sm-circle-3">
                                             <h5>S</h5>
                                         </div>
-                                        <div class="small-circle blue" id="design-sm-circle">
+                                        <div class="small-circle blue" id="host-sm-circle-3">
                                             <h5>H</h5>
                                         </div>
                                     </div>
@@ -319,16 +312,16 @@
                                         <p class="card-text text-left">Featured Project</p>
                                     </div>
                                     <div class="small-circle-container d-flex">
-                                        <div class="small-circle red" id="design-sm-circle">
+                                        <div class="small-circle red" id="design-sm-circle-4">
                                             <h5>D</h5>
                                         </div>
-                                        <div class="small-circle orange" id="design-sm-circle">
+                                        <div class="small-circle orange" id="develop-sm-circle-4">
                                             <h5>D</h5>
                                         </div>
-                                        <div class="small-circle green" id="design-sm-circle">
+                                        <div class="small-circle green" id="support-sm-circle-4">
                                             <h5>S</h5>
                                         </div>
-                                        <div class="small-circle blue" id="design-sm-circle">
+                                        <div class="small-circle blue" id="host-sm-circle-4">
                                             <h5>H</h5>
                                         </div>
                                     </div>
@@ -368,14 +361,9 @@
                 </div>
 
             </div>
-
-
+        </div> <!-- End of bottom container -->
 
 </div>
-
-
-<!--</div>-->
-<!--</div>-->
 
 
 <!-- Optional JavaScript -->
