@@ -47,8 +47,11 @@ h5 {
 }
 
 div .circle {
-    width: 14rem;
-    height: 14rem;
+    /*width: 14rem;*/
+    /*height: 14rem;*/
+
+    width: 10rem;
+    height: 10rem;
     border-radius: 100%;
     border: 10px solid white;
     color: white;
@@ -98,14 +101,6 @@ div .small-circle h5 {
 
 .card {
     width: 90%;
-}
-
-#circle-links-container {
-    width: 500px;
-}
-
-#page-title-xs {
-    width: 500px;
 }
 
 img#logo {
