@@ -12,19 +12,28 @@
 
     <link href="https://fonts.googleapis.com/css?family=Abel|Anton&display=swap" rel="stylesheet">
     <link href="codeup-design-project.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 
     <title>Codeup Design</title>
 </head>
 <body>
 
+<!--<div class="container container-for-xs d-block d-lg-none">-->
+<!--<div class="container container-for-lg d-none d-lg-block">-->
+
+
+
+
 <!-- NAV BAR -->
 
+<!-- For XS screens-->
+
 <div class="nav-for-xs d-block d-sm-none">
-    <div class="nav-white-bar d-flex justify-content-center align-items-center">
-        <img class="rounded-circle" id="logo" src="assets/logo.jpg">
+    <div class="nav-white-bar-xs d-flex justify-content-center align-items-center">
+        <img class="rounded-circle" id="logo-for-xs" src="assets/logo.jpg">
     </div>
-    <div class="d-flex flex-column justify-content-center align-items-center mb-5" id="nav-container">
+    <div class="d-flex flex-column justify-content-center align-items-center mb-5" id="nav-container-xs">
         <span class="logo-text">Codeup Design</span>
         <ul class="nav justify-content-center">
             <li class="nav-item">
@@ -43,17 +52,66 @@
     </div>
 </div>
 
+<!-- For small screens -->
+
+<div class="nav-for-sm d-none d-sm-block d-md-none">
+    <div class="nav-white-bar-sm d-flex justify-content-center align-items-center">
+        <ul class="nav justify-content-center align-items-baseline">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+                <img class="rounded-circle" id="logo-for-sm" src="assets/logo.jpg">
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center" id="nav-container-sm">
+        <span class="logo-text">Codeup Design</span>
+    </div>
+</div>
+
+<!-- For med+ screens -->
+
+<div class="nav-for-md d-none d-md-block">
+    <div class="nav-white-bar-sm px-5 d-flex align-items-center">
+        <img class="rounded-circle mr-3" id="logo-for-sm" src="assets/logo.jpg">
+        <span class="logo-text">Codeup Design</span>
+        <ul class="nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active push" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 
 <!--  PAGE TITLE  -->
 
 <div class="container-fluid text-uppercase text-center p-0" id="title-container">
-    <h1 class="my-5 d-block d-sm-none">Visual Design & Web Development</h1>
+    <h1 class="my-5 d-block d-sm-none">Visual Design &<br>Web Development</h1>
     <h2 class="my-5 d-none d-sm-block d-md-none text-nowrap">Visual Design & Web Development</h2>
-    <h3 class="my-5 d-none d-md-block d-lg-none text-nowrap">Visual Design & Web Development</h3>
+    <h3 class="my-5 d-none d-md-block text-nowrap">Visual Design & Web Development</h3>
     <h2 class="my-5 d-block d-sm-none">From Park City, Utah</h2>
     <h3 class="my-5 d-none d-sm-block d-md-none">From Park City, Utah</h3>
-    <h4 class="my-5 d-none d-md-block d-lg-none">From Park City, Utah</h4>
+    <h4 class="my-5 d-none d-md-block">From Park City, Utah</h4>
 </div>
 
 <!-- MAIN BODY -->
@@ -64,29 +122,31 @@
 
             <!-- CIRCLE LINKS -->
 
-            <div class="container" id="circle-links-container">
+            <!--     LARGE CIRCLES (FOR XS)       -->
 
-                <div class="row d-flex justify-content-center" id="circle-links">
+            <div class="container large-circles d-block d-sm-none" id="circle-links-container-large">
 
-                    <div class="col-6 col-sm-3" id="design">
+                <div class="row d-flex justify-content-center" id="circle-links-large">
+
+                    <div class="circle col-6 col-sm-3" id="design-large">
                         <a href="#design-section"><div class="circle red">
                             <h3>Design</h3>
                         </div></a>
                     </div>
 
-                    <div class="col-6 col-sm-3" id="develop">
+                    <div class="circle col-6 col-sm-3" id="develop-large">
                         <a href="#develop-section"><div class="circle orange">
                             <h3>Develop</h3>
                         </div></a>
                     </div>
 
-                    <div class="col-6 col-sm-3" id="support">
+                    <div class="circle col-6 col-sm-3" id="support-large">
                         <a href="#support-section"><div class="circle green">
                             <h3>Support</h3>
                         </div></a>
                     </div>
 
-                    <div class="col-6 col-sm-3" id="host">
+                    <div class="circle col-6 col-sm-3" id="host-large">
                         <a href="#host-section"><div class="circle blue">
                             <h3>Host</h3>
                         </div></a>
@@ -94,15 +154,57 @@
 
                 </div>
             </div>
+
+
+            <!--     SMALL CIRCLES (FOR S+)       -->
+
+            <div class="container small-circles d-none d-sm-block" id="circle-links-container-small">
+
+                <div class="row d-flex justify-content-center" id="circle-links-small">
+
+                    <div class="circle col-6 col-sm-3" id="design-small">
+                        <a href="#design-section"><div class="circle red">
+                            <h4>Design</h4>
+                        </div></a>
+                    </div>
+
+                    <div class="circle col-6 col-sm-3" id="develop-small">
+                        <a href="#develop-section"><div class="circle orange">
+                            <h4>Develop</h4>
+                        </div></a>
+                    </div>
+
+                    <div class="circle col-6 col-sm-3" id="support-small">
+                        <a href="#support-section"><div class="circle green">
+                            <h4>Support</h4>
+                        </div></a>
+                    </div>
+
+                    <div class="circle col-6 col-sm-3" id="host-small">
+                        <a href="#host-section"><div class="circle blue">
+                            <h4>Host</h4>
+                        </div></a>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
+    </div>
+
+    <hr class="d-none d-sm-block">
 
         <!--    SELECTED WORK    -->
 
         <p class="mx-auto d-block d-md-none" id="selected-work">Selected Work</p>
 
-        <!--    CARDS    -->
+
+        <!--   BOTTOM GRID     -->
 
         <div class="container">
+
+            <!--     GRID TITLES       -->
+
             <div class="row text-left pl-3">
                 <div class="col-md-8">
                     <p class="d-none d-md-block"> Selected Work</p>
@@ -111,11 +213,17 @@
                     <p class="d-none d-md-block">The Last</p>
                 </div>
             </div>
+
+
+
             <div class="row">
                 <div class="col-md-8">
+
+                    <!--     CARDS      -->
+
                     <div class="row">
 
-                        <!--     FIRST CARD       -->
+                        <!--     FIRST CARD      -->
 
                         <div class="col-sm-6">
                             <div class="card bg-transparent border-0 mx-auto">
@@ -227,21 +335,44 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+
+                <!--     THE LAST SECTION      -->
+
+                <div class="col-md-4 d-none d-md-block">
                     <div class="d-flex flex-column align-items-start" id="last-images">
-                        <p><img class="img-fluid" src="assets/images/mobile-phone.jpg" alt="">test space</p>
-                        <p><img class="img-fluid" src="assets/images/head.jpg" alt="">test space</p>
-                        <p><img class="img-fluid" src="assets/images/ipad.jpg" alt="">test space</p>
+
+                        <div class="d-flex mb-4">
+                            <img class="img-fluid mr-3" src="assets/images/mobile-phone.jpg" alt="">
+                            <p class="h5 text-left">The Admin Bar and the Absolute Positioning</p>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <img class="img-fluid mr-3" src="assets/images/head.jpg" alt="">
+                            <p class="h5 text-left">Nibbler Awesome Website Testing</p>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <img class="img-fluid mr-3" src="assets/images/ipad.jpg" alt="">
+                            <p class="h5 text-left">How to Get Google to Like You</p>
+                        </div>
+
+                        <div class="d-flex">
+                            <i class="fa fa-twitter text-primary mr-2"></i>
+                            <p>Last Tweet</p>
+                        </div>
+                        <p id="twitter-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut blanditiis eligendi natus optio, quam, quas quos recusandae, rerum sequi sit soluta. Asperiores porro quia ullam! Ad fugiat hic saepe.</p>
                     </div>
                 </div>
 
             </div>
-        </div>
-    </div>
 
 
 
 </div>
+
+
+<!--</div>-->
+<!--</div>-->
 
 
 <!-- Optional JavaScript -->

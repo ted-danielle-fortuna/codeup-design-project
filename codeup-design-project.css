@@ -6,14 +6,21 @@
 
 body {
     background-color: #F0F0F0;
-    font-size: 1.5em;
 }
 
-#nav-container {
+#nav-container-xs {
     margin-top: 50px;
 }
 
-.nav-white-bar {
+#nav-container-sm {
+    margin-top: 25px;
+}
+
+#nav-container-md {
+    margin-top: 25px;
+}
+
+.nav-white-bar-xs {
     width: 100%;
     height: 125px;
     background-color: white;
@@ -21,7 +28,19 @@ body {
     margin-top: 80px;
 }
 
+.nav-white-bar-sm {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    white-space: nowrap;
+    margin-top: 80px;
+}
+
 h1, h2, h3, h4, h5 {
+    font-family: 'Anton', sans-serif;
+}
+
+.h5 {
     font-family: 'Anton', sans-serif;
 }
 
@@ -40,16 +59,24 @@ h3 {
 
 h4 {
     font-size: 32px;
+    margin-top: calc(50% - 20px);
 }
 
 h5 {
     font-size: 28px;
 }
 
-div .circle {
-    /*width: 14rem;*/
-    /*height: 14rem;*/
+.large-circles .circle div {
+     width: 14rem;
+     height: 14rem;
+     border-radius: 100%;
+     border: 10px solid white;
+     color: white;
+     margin: 5px 0;
+ }
 
+
+.small-circles .circle div{
     width: 10rem;
     height: 10rem;
     border-radius: 100%;
@@ -78,15 +105,15 @@ body {
     font-family: 'Abel', sans-serif;
 }
 div .small-circle {
-    width: 25px;
-    height: 25px;
+    width: 18px;
+    height: 18px;
     border-radius: 100%;
-    margin: 5px;
+    margin: 3px;
 }
 
 div .small-circle h5 {
-    font-size: 14px;
-    padding-top: 5px;
+    font-size: 10px;
+    padding-top: 3px;
 }
 
 .card-img-top {
@@ -100,12 +127,21 @@ div .small-circle h5 {
 }
 
 .card {
-    width: 90%;
+    width: 100%;
 }
 
-img#logo {
+img#logo-for-xs {
     width: 14rem;
     height: 14rem;
+}
+
+img#logo-for-sm {
+    width: 10rem;
+    height: 10rem;
+}
+
+body {
+    font-size: 1em;
 }
 
 .logo-text {
@@ -116,6 +152,7 @@ img#logo {
 .nav-item a {
     color: black;
     text-transform: uppercase;
+    font-size: 1.25em;
 }
 
 .nav-item a:hover {
@@ -127,4 +164,15 @@ img#logo {
     width: 50px;
     border: 3px solid #E6E6E6;
     border-radius: 3px;
+}
+
+hr {
+    border: 1px solid #CCC;
+    margin: 50px 0;
+}
+
+#twitter-text {
+    font-size: 0.75em;
+    text-transform: none;
+    text-align: justify;
 }
