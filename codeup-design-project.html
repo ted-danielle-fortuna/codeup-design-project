@@ -20,23 +20,28 @@
 
 <!-- NAV BAR -->
 
-<div class="nav-white-bar d-flex justify-content-center align-items-center">
-    <img class="rounded-circle" id="logo" src="assets/logo.jpg">
+<div class="nav-for-xs d-block d-sm-none">
+    <div class="nav-white-bar d-flex justify-content-center align-items-center">
+        <img class="rounded-circle" id="logo" src="assets/logo.jpg">
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center mb-5" id="nav-container">
+        <span class="logo-text">Codeup Design</span>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
 </div>
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
-</ul>
 
 <!-- MAIN BODY -->
 
@@ -47,7 +52,8 @@
             <!--  PAGE TITLE  -->
 
             <div class="container" id="title-container">
-                <h1 id="page-title" class="my-5">Visual Design & Web Development</h1>
+                <h1 id="page-title-xs" class="my-5 d-block d-sm-none">Visual Design & Web Development</h1>
+                <h1 id="page-title-larger" class="my-5 d-none d-sm-block">Visual Design & Web Development</h1>
                 <h2 id="page-subtitle" class="my-5">From Park City, Utah</h2>
             </div>
 
