@@ -137,7 +137,7 @@ img#logo-for-xs {
     height: 14rem;
 }
 
-img#logo-for-sm {
+img#logo-for-sm, img#logo-for-md {
     width: 10rem;
     height: 10rem;
 }
