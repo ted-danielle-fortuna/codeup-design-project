@@ -151,6 +151,14 @@ img#logo-for-md {
     text-decoration: underline;
 }
 
+#middle-four-circles {
+    max-width: 800px;
+}
+
+#circle-links-container-small {
+    min-width: 700px;
+}
+
 .large-circles .circle div {
      width: 14rem;
      height: 14rem;
@@ -214,6 +222,10 @@ div .small-circle h5 {
     background-repeat: no-repeat;
     height: 50px;
     width: 50px;
+}
+
+#twitter-bird {
+    font-size: 2em;
 }
 
 #twitter-text {
