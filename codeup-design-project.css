@@ -207,6 +207,25 @@ div .small-circle h5 {
 .card {
     width: 100%;
 }
+#apple-img-lg {
+    max-height: 192px;
+}
+#apple-img-md {
+    max-height: 140px;
+}
+#apple-img-sm {
+    max-height: 156px;
+}
+
+#img-man-lg {
+    max-height: 192px;
+}
+#img-man-md {
+    max-height: 140px;
+}
+#img-man-sm {
+    max-height: 156px;
+}
 
 #last-images img {
     height: 50px;
