@@ -15,15 +15,15 @@ body {
     font-family: 'Abel', sans-serif;
     font-size: 1em;
     background-color: #F0F0F0;
-    max-width: 900px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
 .pseudo-container {
-    max-width: 900px;
+    max-width: 960px;
     position: absolute;
-    margin-left: calc(50% - 450px);
-    margin-top: -35px;
+    margin-left: calc(50% - 480px);
+    margin-top: -36px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -100,19 +100,45 @@ h5 {
     margin-top: 80px;
 }
 
+.nav-white-bar-md {
+    width: 100%;
+    height: 75px;
+    background-color: white;
+    white-space: nowrap;
+    margin-top: 80px;
+}
+
 img#logo-for-xs {
     width: 14rem;
     height: 14rem;
 }
 
-img#logo-for-sm, img#logo-for-md {
+img#logo-for-sm {
     width: 10rem;
     height: 10rem;
 }
 
-.logo-text {
+img#logo-for-md {
+    width: 9rem;
+    height: 9rem;
+}
+
+.circle a:hover {
+    text-decoration: none;
+}
+
+.nav-for-xs .logo-text, .nav-for-sm .logo-text {
     font-size: 3em;
     text-transform: lowercase;
+}
+
+.nav-for-md .logo-text {
+    font-size: 2.5em;
+    text-transform: lowercase;
+}
+
+#nav-list a {
+    font-size: 1em;
 }
 
 .nav-item a {
@@ -179,6 +205,15 @@ div .small-circle h5 {
     width: 50px;
     border: 3px solid #E6E6E6;
     border-radius: 3px;
+    /*object-fit: cover;*/
+}
+
+.thumbnail-pic {
+    background-image: url("assets/images/mobile-phone.jpg");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
 }
 
 #twitter-text {
